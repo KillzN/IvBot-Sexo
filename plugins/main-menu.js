@@ -3,6 +3,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 import { promises } from 'fs'
 import { join } from 'path'
+
 let handler = async (m, { conn, usedPrefix, text, command }) => {
     try {
         let { exp, diamantes, level, role } = global.db.data.users[m.sender]
@@ -10,13 +11,17 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
         let name = await conn.getName(m.sender)
         exp = exp || 'Desconocida';
         role = role || 'Aldeano';
-        const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+
+        // Aquí obtenemos la mención correcta para WhatsApp
+        const user = `@${m.sender.split('@')[0]}`;
+
         const _uptime = process.uptime() * 1000;
         const uptime = clockString(_uptime);
         let totalreg = Object.keys(global.db.data.users).length
         let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
         await m.react('🌹')
-        const imageUrl = 'https://files.catbox.moe/091d8i.jpg';
+
+        const imageUrl = 'https://files.catbox.moe/gk8fi2.jpg';
         let menu = `
 🌐 *\`Menú Principal\`*
 ────────────────────────────

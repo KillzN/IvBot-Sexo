@@ -33,9 +33,9 @@ handler.all = async function (m) {
   //let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
 
   //CREADOR Y OTROS
-  global.creador = 'Wa.me/56983073328'
+  global.creador = 'Wa.me/5493492419916'
   global.botreal = `${(conn.user.jid == global.conn.user.jid ? '*Bot:* Oficial' : `*SubBot de: ${conn.user.jid.split('@')[0]}*`)}`
-  global.asistencia = 'Wa.me/56983073328'
+  global.asistencia = 'Wa.me/5493492419916'
 
   //REACCIONES 
   global.rwait = '🕒'
@@ -59,7 +59,7 @@ handler.all = async function (m) {
   //ENLACES
   var group = 'https://chat.whatsapp.com/HqhAoXS8TCcJIn0KrbJZKz'
   var web = 'https://shadow-bot.vercel.app/'
-  let instagram = 'https://www.instagram.com/ineffable.mvrco'
+  let instagram = 'https://www.instagram.com/valu._16'
 
   global.redes = [group, web, instagram].getRandom()
 

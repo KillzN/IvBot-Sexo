@@ -7,15 +7,15 @@ const handler = async (m, { conn, usedPrefix, text }) => {
 
   try {
     await m.react('👑'); // Reacción al mensaje
-    const imageUrl = 'https://files.catbox.moe/091d8i.jpg'; // URL de la imagen
+    const imageUrl = 'https://files.catbox.moe/gk8fi2.jpg'; // URL de la imagen
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0]; // Usuario que ejecuta el comando
 
     const str = `
 🌐 *\`Menú Owner\`*
 ────────────────────────────
-*🌴 Nombre:* MvrcoSexo
+*🌴 Nombre:* IvBot
 *☕ Creador:* @𝖎𝖓𝖊𝖋𝖋𝖆𝖇𝖑𝖊.𝖒𝖛𝖗𝖈𝖔
-*📞 Número Creador:* +56983073328
+*📞 Número Creador:* +5493492419916
 \`Lista de Comandos\`
 ╰➤ ׁ${xowner} ${usedPrefix}update
 ╰➤ ׁ${xowner} ${usedPrefix}leavegc
